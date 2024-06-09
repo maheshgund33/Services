@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri:
+
+  profiles:
+    active: native
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080
+
+  instance:
+    prefer-ip-address: true
