@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+zuul:
+  routes:
+    user-service:
+      path: /user/**
+      serviceId: user-service
+
+    payment-service:
+      path: /payment/**
+      serviceId: payment-service
+
+    content-service:
+      path: /course/**
+      serviceId: content-service
+
+    access-service:
+      path: /enrollment/**
+      serviceId: access-service
+
+    admin-service:
+      path: /admin/**
+      serviceId: admin-service
